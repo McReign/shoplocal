@@ -1,0 +1,269 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 768px
+$small: 576px
+	
+#header
+	width: 100%
+	.sort
+		position: relative
+		font-size: 14px
+		font-weight: 600
+		color: $blue
+		cursor: pointer
+		.sort-menu
+			margin-top: -26px
+			margin-left: -18px
+			box-sizing: content-box
+			ul
+				width: calc(100% + 10px)
+				position: absolute
+				text-align: left
+				min-width: 120px
+				padding: 12px 18px
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2)
+				border-radius: 4px
+				cursor: default
+				background-color: #fff
+				z-index: 100
+				.dropdown-header
+					text-align: left
+					padding-bottom: 12px
+					margin-bottom: 3px
+					font-size: 14px
+					border-bottom: 1px solid rgba(22,69,154, 0.1)
+					cursor: pointer
+					span
+						font-size: 12px
+				li
+					text-align: left
+					display: block !important
+					margin: 15px 0
+					cursor: pointer
+					font-weight: 400
+	#header-up
+		width: 100%
+		padding: 22px 85px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		-ms-align-items: center
+		align-items: center
+		@media (max-width: $large + 1px)
+			flex-wrap: wrap
+			justify-content: space-between
+			padding: 22px 0
+		@media (max-width: $large)
+			justify-content: center
+		#header-logo
+			width: 230px
+			height: 55px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			-ms-align-items: center
+			align-items: center
+			background-color: #f5f5f5
+			border: 1px solid #979797
+			@media (max-width: $large)
+				margin-bottom: 20px
+			@media (max-width: $medium)
+				margin-bottom: 0
+			span
+				font-size: 16px
+				font-weight: 600
+				color: #bbb
+		#header-search
+			#results-menu
+				position: absolute
+				z-index: 200
+				ul
+					display: none
+					width: 528px
+					padding: 14px 23px
+					border: 1px solid #ddd
+					cursor: default
+					background-color: #fff
+					z-index: 100
+					@media (max-width: $xlarge)
+						width: 300px
+					@media (max-width: $large)
+						width: 528px
+					li
+						display: block !important
+						margin-right: 0
+						cursor: pointer
+						font-weight: 400
+						font-size: 16px
+						line-height: 1.13
+						p
+							font-size: 14px
+							color: $grey
+					li:not(:last-child)
+						margin-bottom: 16px
+			@media (max-width: $medium)
+				display: none
+			form
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				-ms-align-items: center
+				align-items: center
+			input,
+			button
+				display: inline-block
+			input
+				font-family: Poppins
+				font-weight: 300
+				width: 528px
+				height: 26px
+				margin-right: 14px
+				outline: none
+				padding: 0 9px
+				border: 1px solid $light-grey
+				font-style: italic
+				font-size: 12px
+				z-index: 201
+				&::-webkit-input-placeholder
+					color: $light-grey
+					font-family: Poppins
+					font-weight: 300
+				&::-moz-placeholder
+					color: $light-grey
+					font-family: Poppins
+					font-weight: 300
+				&:-ms-input-placeholder
+					color: $light-grey
+					font-family: Poppins
+					font-weight: 300
+				&:-moz-placeholder
+					color: $light-grey
+					font-family: Poppins
+					font-weight: 300
+				@media (max-width: $xlarge)
+					max-width: 300px
+				@media (max-width: $large)
+					max-width: 100%
+					flex-grow: 1
+		
+
+	#header-mobile-menu
+		padding: 8px 19px 10px 19px
+		background-color: #b0f1df
+		@media (min-width: $medium + 1px)
+			display: none
+		.input-block
+			padding: 10px
+			margin-bottom: 10px
+			background-color: $white
+			display: flex
+			.icon-block
+				width: 17px
+				margin-right: 10px
+			input
+				outline: none
+				border: none
+				width: 100%
+				font-size: 14px
+				font-style: italic
+		ul
+			display: flex
+			justify-content: space-between
+			li
+				display: inline-block
+				font-size: 14px
+				color: $blue
+				cursor: pointer
+				font-weight: 600
+			.sort
+				position: relative
+				cursor: pointer
+				&:hover
+					.sort-menu
+						ul
+							display: block
+				.sort-menu
+					padding-top: 10px
+					ul
+						display: none
+						position: absolute
+						min-width: 120px
+						padding: 10px
+						right: 0
+						cursor: default
+						background-color: #fff
+						z-index: 100
+						transition: .3s
+						li
+							display: block !important
+							margin-right: 0
+							cursor: pointer
+							font-weight: 400
+						li:not(:last-child)
+							margin-bottom: 5px
+							padding-bottom: 5px
+	#header-menu
+		padding-top: 5px
+		margin-bottom: 20px
+		@media (max-width: $medium)
+			display: none
+		ul
+			text-align: center
+			li
+				display: inline-block
+				font-size: 14px
+				color: $blue
+				font-weight: normal
+				cursor: pointer
+			&:last-child
+				margin-right: 0
+	#header-image
+		position: relative
+		width: 100%
+		height: 78px
+		overflow: hidden
+		background-image: url('../../assets/background-buildings.png')
+		background-repeat: repeat-x
+		background-position: 0 -9px
+		border-bottom: 27px solid #b0f1df
+		box-sizing: content-box
+		@media (max-width: $medium)
+			height: 38px
+			border-bottom: none
+		.container
+			position: relative
+			height: 100%
+		.trees
+			bottom: -5px
+			left: calc(50% - 460px)
+			@media (max-width: $medium)
+				left: calc(50% - 323px)
+		.houses
+			bottom: 0
+			left: calc(50% - 375px)
+			@media (max-width: $medium)
+				left: calc(50% - 210px)
+		.people
+			bottom: 0
+			left: calc(50% - 322px)
+			@media (max-width: $medium)
+				display: none
+		img
+			position: absolute
+			@media (max-width: $medium)
+				height: 100%
+a:visited
+	color: $blue

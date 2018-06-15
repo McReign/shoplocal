@@ -1,0 +1,27 @@
+#not-found-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 173px 0; }
+  #not-found-page div {
+    color: #9b9b9b;
+    text-align: left;
+    max-width: 412px; }
+    #not-found-page div h1 {
+      font-size: 33px;
+      font-weight: normal;
+      font-family: Zilla Slab;
+      line-height: 0.73;
+      margin-bottom: 12px; }
+    #not-found-page div h3 {
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 1.41;
+      margin-bottom: 46px; }
+    #not-found-page div ul {
+      display: flex;
+      justify-content: space-between; }
+      #not-found-page div ul li {
+        font-size: 14px;
+        color: #16459a;
+        cursor: pointer; }

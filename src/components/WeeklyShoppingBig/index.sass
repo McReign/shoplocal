@@ -1,0 +1,53 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+	
+.weekly-shopping-big
+	h1, h3
+		@media (max-width: $medium)
+			text-align: center
+	h3
+		color: #666666
+		font-size: 26px
+		font-family: Zilla Slab
+		font-weight: 300
+		text-transform: uppercase
+		margin-bottom: 5px
+		@media (max-width: $large)
+			font-size: 19px
+	h1
+		color: $blue
+		font-size: 109px
+		font-family: Zilla Slab
+		font-weight: 600
+		text-transform: uppercase
+		margin-bottom: 25px
+		@media (max-width: $xlarge)
+			font-size: 80px
+		@media (max-width: $large)
+			font-size: 74px
+	.img-block
+		width: 100%
+		text-align: center
+		margin-bottom: 15px
+		cursor: pointer
+	img
+		width: 366px
+		height: 366px
+		max-width: 100%
+	.img-sticker
+		position: relative
+		margin-top: 33px
+	.price-block
+		margin-bottom: 10px
+		cursor: pointer
+	.name-block
+		cursor: pointer
+	.product-name
+		margin-bottom: 10px

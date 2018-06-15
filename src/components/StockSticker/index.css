@@ -1,0 +1,51 @@
+.stock-sticker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #16459a;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600; }
+  @media (max-width: 767px) {
+    .stock-sticker {
+      width: 49px;
+      height: 49px;
+      font-weight: 500;
+      padding-top: 0; } }
+  .stock-sticker .default {
+    display: block;
+    text-align: center; }
+    .stock-sticker .default span {
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.2;
+      display: block;
+      width: 100%; }
+    @media (max-width: 767px) {
+      .stock-sticker .default {
+        display: none; } }
+  .stock-sticker .mini {
+    display: none;
+    text-align: center; }
+    .stock-sticker .mini span {
+      font-size: 10px;
+      line-height: 1;
+      display: block;
+      width: 100%;
+      color: #ffffff;
+      text-transform: uppercase; }
+      .stock-sticker .mini span:first-child {
+        font-size: 24px;
+        line-height: 0.8; }
+    @media (max-width: 767px) {
+      .stock-sticker .mini {
+        display: block; } }

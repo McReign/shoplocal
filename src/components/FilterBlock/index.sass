@@ -1,0 +1,53 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+	
+.filter-block
+	width: 100%
+	padding: 20px 20px 10px 20px
+	margin-bottom: 20px
+	border: 1px solid $light-grey
+	.block-header
+		font-size: 18px
+		color: $grey
+		margin-bottom: 20px
+	ul
+		user-select: none
+		.block-item
+			font-size: 14px
+			color: $blue
+			margin-bottom: 20px
+			font-weight: normal
+			label
+				display: block
+		.checkbox
+			position: absolute
+			z-index: -1
+			opacity: 0
+			margin: 10px 0 0 20px
+		.checkbox + label
+			position: relative
+			padding: 0 0 0 30px
+			cursor: pointer
+		.checkbox + label:before
+			content: ''
+			position: absolute
+			display: flex
+			justify-content: center
+			align-items: center
+			top: -1px
+			left: 0
+			width: 20px
+			height: 20px
+			background-color: #fff
+			border-radius: 3px
+			border: 1.5px solid $light-grey
+		.checkbox:checked + label:before 
+			content: '✔'
+			

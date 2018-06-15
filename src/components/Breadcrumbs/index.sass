@@ -1,0 +1,35 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+
+ul.breadcrumb
+  font-size: 14px
+  font-weight: bold
+  color: $blue
+
+ul.breadcrumb li
+  display: inline
+  font-size: inherit
+
+ul.breadcrumb li:last-child
+  font-weight: normal
+  color: #9b9b9b
+
+ul.breadcrumb li:first-child
+  font-weight: bold
+  color: #9b9b9b
+
+ul.breadcrumb li+li:before
+  content: " / "
+  font-size: 14px
+  font-weight: normal
+  color: $blue
+
+a:visited
+	color: $blue

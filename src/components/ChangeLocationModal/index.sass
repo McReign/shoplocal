@@ -1,0 +1,125 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+
+.overlay
+  background: #000
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  z-index: 1000
+  opacity: .3
+
+.visible
+  @media (max-width: $small)
+    width: 100%
+    left: 0
+    margin-left: 0
+  background: #fff
+  position: fixed
+  left: 50%
+  top: 315px
+  z-index: 2000
+  width: 539px
+  padding: 0px
+  padding-bottom: 25px
+  margin-left: -270px
+
+.visible
+  .close-btn
+    position: absolute
+    right: 10px
+    top: 10px
+    width: 13px
+    height: 13px
+    cursor: pointer
+
+#win
+  .title
+    margin-left: 31px
+    margin-top: 16px
+    font-family: Poppins
+    font-size: 18px
+    text-align: left
+    color: #666666
+
+#win
+  .input-form
+    @media (max-width: $small)
+      display: block
+    display: flex
+
+#win
+  input
+    @media (max-width: $small)
+      width: 100%
+    width: 360px
+    height: 30px
+    margin-right: 14px
+    outline: none
+    padding: 0 9px
+    border: solid 1px $light-grey
+    font-style: italic
+    font-size: 12px
+  input::placeholder
+    color: $light-grey
+    font-family: Poppins
+    font-size: 12px
+    font-weight: 300
+    font-style: italic
+    line-height: 2.5
+    letter-spacing: normal
+    @media (max-width: $large)
+      max-width: 100%
+      flex-grow: 1
+
+#win
+  button
+    @media (max-width: $small)
+      margin-top: 10px
+    margin-top: 0
+
+
+.prevent-location
+  display: flex
+  justify-content: center
+  margin-top: 18px
+  span
+    font-family: Poppins
+    font-size: 14px
+    color: $blue
+    cursor: pointer
+
+.prevent-location
+  .location
+    width: 11px
+    height: 14px
+    margin-right: 8px
+
+#warning
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 42px
+  margin-top: 23px
+  padding: 8px
+  border-radius: 8px
+  background-color: rgba(208, 2, 27, 0.05)
+  span
+    font-family: Poppins
+    font-size: 14px
+    text-align: left
+    color: #d0021b
+
+.content
+  margin: 14px 31px
+

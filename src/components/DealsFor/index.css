@@ -1,0 +1,17 @@
+#deals-for {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #9b9b9b; }
+  #deals-for .city {
+    font-size: 14px;
+    color: #9b9b9b;
+    margin-bottom: 5px; }
+  #deals-for .info {
+    font-size: 12px;
+    color: #16459a;
+    cursor: pointer; }
+
+a:visited {
+  color: #16459a; }

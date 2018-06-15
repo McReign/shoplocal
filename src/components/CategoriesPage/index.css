@@ -1,0 +1,13 @@
+#categories-page .product-template {
+  margin-bottom: 30px;
+  align-items: flex-start; }
+  #categories-page .product-template .img-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    width: 200px;
+    height: auto; }
+    #categories-page .product-template .img-block img {
+      max-width: 150px;
+      max-height: 150px; }

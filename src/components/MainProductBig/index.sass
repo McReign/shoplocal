@@ -1,0 +1,127 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+
+.main-product-big
+	display: flex
+	align-items: flex-start
+	cursor: pointer
+	@media (max-width: $small)
+		align-items: center
+	.img-block
+		position: relative
+		display: flex
+		flex-basis: 380px
+		min-width: 380px
+		max-width: 380px
+		height: 380px
+		align-items: center
+		text-align: center
+		@media (max-width: $xlarge)
+			flex-basis: 300px
+			min-width: 300px
+			max-width: 300px
+			height: 300px
+		@media (max-width: $small)
+			flex-basis: 177px
+			min-width: 177px
+			max-width: 177px
+			height: 177px
+		img
+			width: 100%
+			max-height: 380px
+			@media (max-width: $xlarge)
+				max-height: 300px
+			@media (max-width: $small)
+				max-height: 177px
+		.stock-sticker
+			width: 78px
+			height: 78px
+			@media (max-width: $medium)
+				display: none
+	.info-block
+		text-align: right
+		flex-grow: 1
+		padding-bottom: 15px
+		position: relative
+		@media (max-width: $large)
+			padding-left: 15px
+		.price-block
+			text-align: right
+			margin-bottom: 18px
+			@media (max-width: $large)
+				text-align: left
+			.price-container
+				position: relative
+				display: inline-block
+				text-align: left
+				padding-left: 34px
+				.price-big
+					display: block
+					margin-bottom: 10px
+				.old-price
+					display: block
+					font-size: 14px
+					color: $grey
+					font-weight: 600
+					text-decoration: line-through
+				.stock-sticker
+					position: absolute
+					top: 0
+					right: -70px
+					display: flex
+					@media (min-width: $medium)
+						display: none
+		.stock-block
+			@media (max-width: $large)
+				text-align: left
+			div
+				display: flex
+				align-items: center
+				width: 206px
+				@media (max-width: $xlarge)
+					width: 150px
+				@media (max-width: $large)
+					width: 125px
+					padding: 8px 10px
+				@media (max-width: $medium)
+					width: 100%
+					height: 64px
+				@media (max-width: $small)
+					width: 150px
+				&::before
+					@media (max-width: $medium)
+						border-top: 32px solid transparent
+						border-bottom: 32px solid transparent
+						border-right: 30px solid #79bfff
+		.name-block
+			display: block
+			text-align: right
+			padding-left: 34px
+			@media (max-width: $large)
+				text-align: left
+			div
+				display: inline-block
+				text-align: left
+				max-width: 180px
+				.product-name
+					font-size: 16px
+					color: $grey
+					line-height: 1.5
+					letter-spacing: 0.2px
+					margin-bottom: 4px
+				.shop-name
+					font-size: 14px
+					color: $grey
+					line-height: 1.43
+				span
+					font-size: inherit
+					font-weight: 500
+					line-height: 1.29
+					color: $blue

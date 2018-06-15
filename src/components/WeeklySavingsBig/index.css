@@ -1,0 +1,46 @@
+#weekly-savings-big {
+  margin-bottom: 30px; }
+  #weekly-savings-big .img-block {
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: center;
+    position: relative; }
+    #weekly-savings-big .img-block img {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px; }
+    #weekly-savings-big .img-block .stock-block {
+      padding: 3px 23px;
+      display: inline-block;
+      background-color: #79bfff; }
+      #weekly-savings-big .img-block .stock-block span {
+        color: #ffffff;
+        font-size: 26px;
+        line-height: 1.92;
+        font-weight: 600; }
+  #weekly-savings-big .price-block {
+    position: relative;
+    display: block;
+    text-align: left;
+    margin-bottom: 15px; }
+    #weekly-savings-big .price-block span {
+      display: block;
+      font-size: 30px;
+      font-weight: 600;
+      color: #16459a; }
+    #weekly-savings-big .price-block .save {
+      padding-top: 5px;
+      font-size: 16px;
+      color: #9b9b9b;
+      font-weight: 600; }
+  #weekly-savings-big .price-block-mini {
+    display: block;
+    text-align: left;
+    margin-bottom: 25px; }
+    #weekly-savings-big .price-block-mini span {
+      font-size: 20px;
+      font-weight: 600;
+      color: #16459a; }
+
+.shop-name {
+  display: none; }

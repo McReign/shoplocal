@@ -1,0 +1,25 @@
+ul.breadcrumb {
+  font-size: 14px;
+  font-weight: bold;
+  color: #16459a; }
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: inherit; }
+
+ul.breadcrumb li:last-child {
+  font-weight: normal;
+  color: #9b9b9b; }
+
+ul.breadcrumb li:first-child {
+  font-weight: bold;
+  color: #9b9b9b; }
+
+ul.breadcrumb li + li:before {
+  content: " / ";
+  font-size: 14px;
+  font-weight: normal;
+  color: #16459a; }
+
+a:visited {
+  color: #16459a; }

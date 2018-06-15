@@ -1,0 +1,83 @@
+#retailer-header {
+  margin: 0; }
+  @media (max-width: 768px) {
+    #retailer-header {
+      margin: 0 -15px; } }
+  #retailer-header .img-block {
+    border: solid 1px #d5d5d5;
+    padding: 18px; }
+    @media (max-width: 1199px) {
+      #retailer-header .img-block {
+        border: none; } }
+    #retailer-header .img-block .retailer-header-text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      #retailer-header .img-block .retailer-header-text img {
+        margin-right: 42px; }
+      #retailer-header .img-block .retailer-header-text h2 {
+        font-size: 24px;
+        color: #333333; }
+        @media (max-width: 1199px) {
+          #retailer-header .img-block .retailer-header-text h2 {
+            display: none; } }
+    #retailer-header .img-block .retailer-header-bg img {
+      position: absolute;
+      bottom: -19px;
+      right: 0; }
+      @media (max-width: 1199px) {
+        #retailer-header .img-block .retailer-header-bg img {
+          width: 234px;
+          height: 95px;
+          bottom: -18px; } }
+  #retailer-header .info-block {
+    padding: 15px;
+    background-color: #ee7125;
+    background-image: url("../../assets/distress.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    #retailer-header .info-block .nearest-store, #retailer-header .info-block .address, #retailer-header .info-block .open-today, #retailer-header .info-block .phone, #retailer-header .info-block .information {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: #ffffff; }
+      #retailer-header .info-block .nearest-store h3, #retailer-header .info-block .address h3, #retailer-header .info-block .open-today h3, #retailer-header .info-block .phone h3, #retailer-header .info-block .information h3 {
+        font-family: Zilla Slab;
+        font-size: 18px;
+        font-weight: 600; }
+        @media (max-width: 1199px) {
+          #retailer-header .info-block .nearest-store h3, #retailer-header .info-block .address h3, #retailer-header .info-block .open-today h3, #retailer-header .info-block .phone h3, #retailer-header .info-block .information h3 {
+            display: none; } }
+      #retailer-header .info-block .nearest-store p, #retailer-header .info-block .address p, #retailer-header .info-block .open-today p, #retailer-header .info-block .phone p, #retailer-header .info-block .information p {
+        display: none;
+        font-size: 14px; }
+        @media (max-width: 1199px) {
+          #retailer-header .info-block .nearest-store p, #retailer-header .info-block .address p, #retailer-header .info-block .open-today p, #retailer-header .info-block .phone p, #retailer-header .info-block .information p {
+            display: block; } }
+    #retailer-header .info-block .address img, #retailer-header .info-block .open-today img, #retailer-header .info-block .phone img {
+      width: 90px;
+      height: 54px; }
+    #retailer-header .info-block .address p, #retailer-header .info-block .open-today p, #retailer-header .info-block .phone p {
+      display: block;
+      font-size: 14px;
+      font-weight: normal; }
+      #retailer-header .info-block .address p:first-child, #retailer-header .info-block .open-today p:first-child, #retailer-header .info-block .phone p:first-child {
+        margin-bottom: 10px; }
+    #retailer-header .info-block .open-today {
+      padding-left: 0; }
+      #retailer-header .info-block .open-today p {
+        width: 102px;
+        display: block;
+        text-align: center; }
+    #retailer-header .info-block .information p {
+      display: block;
+      font-size: 14px;
+      text-decoration: underline;
+      cursor: pointer; }
+
+.hg100 {
+  height: 100%; }
+
+@media (max-width: 1199px) {
+  .xl-none {
+    display: none !important; } }

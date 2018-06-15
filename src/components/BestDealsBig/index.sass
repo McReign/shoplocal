@@ -1,0 +1,42 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+#best-deals-big
+	cursor: pointer
+	@media (max-width: $medium)
+		margin-bottom: 15px
+	.img-block
+		position: relative
+		margin-bottom: 25px
+		width: 456px
+		height: 456px
+		max-width: 100%
+		@media (max-width: $xlarge)
+			width: 380px
+			height: 380px
+		@media (max-width: $medium)
+			margin: 0 auto
+			margin-bottom: 15px
+	img
+		width: 100%
+		max-height: 456px
+		@media (max-width: $xlarge)
+			max-height: 380px
+	.img-sticker
+		margin-left: -19px
+	.stock-sticker
+		display: flex
+		margin-right: -19px
+	.price-block
+		margin-bottom: 10px
+		@media (max-width: $medium)
+			padding: 0 60px
+	.name-block
+		@media (max-width: $medium)
+			padding: 0 60px

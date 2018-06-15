@@ -1,0 +1,52 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+	
+.reminder
+	display: none
+	border-top: 1px solid $light-grey
+	border-bottom: 1px solid $light-grey
+	padding: 18px 0 25px 0
+	h2
+		font-size: 20px
+		color: #333333
+		font-weight: normal
+		margin-bottom: 5px
+	p
+		font-size: 12px
+		color: $grey
+		margin-bottom: 10px
+	.send-block
+		display: flex
+		input
+			outline: none
+			border: 1px solid $light-grey
+			padding: 13px
+			margin-right: 12px
+			flex-grow: 1
+			font-size: 12px
+		::-webkit-input-placeholder
+			font-style: italic
+		::-moz-placeholder
+			font-style: italic
+		:-ms-input-placeholder
+			font-style: italic
+		:-moz-placeholder
+			font-style: italic
+		button
+			border: none
+			outline: none
+			border-radius: 4px
+			color: $white
+			cursor: pointer
+			padding: 0 28px
+			font-size: 16px
+			background-color: $blue
+	@media (max-width: $medium)
+		display: block

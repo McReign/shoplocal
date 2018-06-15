@@ -1,0 +1,63 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+
+#welcome-page
+	padding: 210px 0
+	min-height: calc(100vh - 447px)
+	display: flex
+	justify-content: center
+	align-items: center
+	div
+		text-align: center
+		color: $grey
+		h1
+			font-size: 33px
+			font-family: Zilla Slab
+			line-height: 0.73
+			margin-bottom: 9px
+			letter-spacing: 0.4px
+			font-weight: normal
+			@media (max-width: $small)
+				font-size: 25px
+		h3
+			font-size: 17px
+			line-height: 1.41
+			font-weight: normal
+			margin-bottom: 14px
+			@media (max-width: $small)
+				font-size: 13px
+		.submit-block
+			display: flex
+			justify-content: space-between
+			input
+				margin-right: 16px
+				flex-grow: 1
+				outline: none
+				border: 1px solid #ccc
+				line-height: 2.5
+				padding: 0 9px
+				color: #000
+				font-size: 12px
+				font-style: italic
+			input::placeholder
+				color: #cccccc
+			button
+				line-height: 1.88
+				color: #ffffff
+				background-color: $blue
+				border: none
+				outline: none
+				border-radius: 4px
+				padding: 0 32px
+				cursor: pointer
+				font-size: 16px
+				font-weight: 300
+				@media (max-width: $small)
+					padding: 0 20px

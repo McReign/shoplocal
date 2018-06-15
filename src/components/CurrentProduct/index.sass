@@ -1,0 +1,165 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+
+.current-product
+	padding-bottom: 28px
+	margin-bottom: 45px
+	border-bottom: 1px solid #dedede
+	@media (max-width: $medium)
+		border-bottom: none
+	.img-block
+		@media (max-width: $medium)
+			margin-bottom: 32px
+		img
+			width: 100%
+	.deal-block
+		color: $blue
+		margin-bottom: 15px
+		.deal
+			font-size: 50px
+			font-weight: 600
+			margin-right: 13px
+		.price-qualifier
+			font-size: 20px
+			font-weight: 600
+	.title
+		font-size: 24px
+		font-weight: normal
+		line-height: 1.08
+		color: $grey
+		margin-bottom: 5px
+	.original-deal-description
+		text-decoration: line-through
+	.additional-deal-description
+		margin-bottom: 12px
+	.original-deal-description, .additional-deal-description
+		font-size: 14px
+		font-weight: normal
+		color: $grey
+		line-height: 2.14
+	.buy-online
+		padding: 6px 36px
+		margin-bottom: 11px
+		border: none
+		outline: none
+		background-color: $blue
+		color: #ffffff
+		border-radius: 4px
+		font-size: 16px
+		font-weight: 300
+		line-height: 1.88
+		cursor: pointer
+	.valid-dates
+		margin-bottom: 4px
+		color: $grey
+		font-size: 12px
+		font-weight: normal
+		line-height: 2.5
+	.sku
+		color: $grey
+		font-size: 14px
+		font-weight: normal
+		line-height: 1.71
+		margin-bottom: 30px
+	.grid-options
+		margin-bottom: 21px
+		border-top: 1px solid #dedede
+		border-bottom: 1px solid #dedede
+		height: 180px
+	.description-block
+		padding-bottom: 23px
+		padding-top: 23px
+		margin-top: 22px
+		margin-bottom: 27px
+		border-bottom: 1px solid #dedede
+		border-top: 1px solid #dedede
+		.description
+			margin-bottom: 10px
+			li
+				color: #666666
+				font-size: 14px
+				font-weight: normal
+				line-height: 1.79
+				@media (max-width: $large)
+					list-style: disc inside
+		.sales-description
+			margin-bottom: 9px
+			p
+				color: #666666
+				font-size: 12px
+				font-weight: normal
+				line-height: 1.92
+		.fineprint
+			color: #666666
+			font-size: 12px
+			font-weight: normal
+			line-height: 1.92
+	.shop-info-block
+		.img-block
+			margin-bottom: 8px
+			p
+				margin-bottom: 15px
+				color: #666666
+				font-size: 14px
+				line-height: 1.29
+			img
+				width: 286px
+		.store-info-block
+			margin-bottom: 10px
+			@media (max-width: $large)
+				.header-address
+					display: none
+				.link-to-store-info
+					display: none
+				a
+					color: #666 !important
+					font-size: 14px !important
+		.open-block
+			@media (max-width: $large)
+				p
+					display: inline-block
+					font-weight: normal !important
+				p:first-child
+					margin-right: 10px
+		.phone-block
+			@media (max-width: $large)
+				p
+					display: inline-block
+					font-weight: normal !important
+				p:first-child
+					margin-right: 10px
+		.header
+			font-size: 14px
+			color: #666666
+			font-weight: 600
+			line-height: 1.29
+		.store-address, .link-to-store-info
+			margin-bottom: 14px
+			font-size: 14px
+			font-weight: normal
+			color: $blue
+			line-height: 1.29
+		.link-to-store-info
+			margin-bottom: 0
+			cursor: pointer
+		.store-hours, .contact-phone-number
+			font-size: 14px
+			font-weight: normal
+			line-height: 1.29
+			color: #666666
+.store-block
+	display: none
+	margin-bottom: 29px
+	span
+		font-size: 14px
+		color: $blue
+		cursor: pointer
+	@media (max-width: $large)
+		display: block

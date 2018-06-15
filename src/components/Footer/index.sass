@@ -1,0 +1,36 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 768px
+$small: 576px
+
+#footer
+  width: 100%
+  overflow: hidden
+  #footer-img
+    display: flex
+    justify-content: center
+    overflow: hidden
+    height: 102px
+    background-image: url('../../assets/background-buildings.png')
+    background-repeat: repeat-x
+    background-size: auto 100%
+    background-position: 0 9px
+  #footer-block
+    width: 100%
+    padding: 41px 0
+    text-align: center
+    background-color: #333
+    border: solid 1px #979797
+    z-index: 5
+    span
+      font-size: 12px
+      font-weight: normal
+      line-height: 1.17
+      color: $white
+      @media (max-width: $small)
+        display: block

@@ -1,0 +1,20 @@
+.btn-default {
+  font-family: Poppins;
+  padding: 4px 35px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #16459a;
+  font-weight: 200;
+  font-size: 16px;
+  cursor: pointer; }
+  .btn-default:hover {
+    background-color: #0a2f73; }
+  .btn-default:active {
+    color: #cbd4e6;
+    background-color: #0a2f73; }
+
+.btn-disabled {
+  color: #f1f6fe;
+  background-color: #8aa2cc; }

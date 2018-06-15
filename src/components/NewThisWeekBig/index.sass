@@ -1,0 +1,70 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+	
+.new-this-week-product-big
+	display: flex
+	cursor: pointer
+	@media (max-width: $medium)
+		margin-bottom: 30px
+	.img-block
+		flex-basis: 407px
+		min-width: 407px
+		max-width: 407px
+		height: 407px
+		@media (max-width: $xlarge)
+			flex-basis: 350px
+			min-width: 350px
+			max-width: 350px
+			height: 350px
+		@media (max-width: $large)
+			flex-basis: 300px
+			min-width: 300px
+			max-width: 300px
+			height: 300px
+		@media (max-width: $medium)
+			flex-basis: 175px
+			min-width: 175px
+			max-width: 175px
+			height: 175px
+	img
+		width: 100%
+		max-height: 407px
+		@media (max-width: $xlarge)
+			max-height: 350px
+		@media (max-width: $large)
+			max-height: 300px
+		@media (max-width: $medium)
+			max-height: 175px
+	.info-block
+		padding: 40px 30px 0 30px
+		@media (max-width: $medium)
+			padding: 0
+	.price-block
+		margin-bottom: 10px
+	.stock-block
+		div
+			display: flex
+			align-items: center
+			width: 200px
+			@media (max-width: $xlarge)
+				width: 150px
+			@media (max-width: $small)
+				height: 50px
+				padding: 8px 10px
+			span
+				@media (max-width: $small)
+					font-size: 13px
+					font-weight: 500
+			&::before
+				@media (max-width: $small)
+					border-top: 25px solid transparent
+					border-bottom: 25px solid transparent
+					border-right: 15px solid #79bfff
+					left: -15px

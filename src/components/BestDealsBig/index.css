@@ -1,0 +1,38 @@
+#best-deals-big {
+  cursor: pointer; }
+  @media (max-width: 767px) {
+    #best-deals-big {
+      margin-bottom: 15px; } }
+  #best-deals-big .img-block {
+    position: relative;
+    margin-bottom: 25px;
+    width: 456px;
+    height: 456px;
+    max-width: 100%; }
+    @media (max-width: 1199px) {
+      #best-deals-big .img-block {
+        width: 380px;
+        height: 380px; } }
+    @media (max-width: 767px) {
+      #best-deals-big .img-block {
+        margin: 0 auto;
+        margin-bottom: 15px; } }
+  #best-deals-big img {
+    width: 100%;
+    max-height: 456px; }
+    @media (max-width: 1199px) {
+      #best-deals-big img {
+        max-height: 380px; } }
+  #best-deals-big .img-sticker {
+    margin-left: -19px; }
+  #best-deals-big .stock-sticker {
+    display: flex;
+    margin-right: -19px; }
+  #best-deals-big .price-block {
+    margin-bottom: 10px; }
+    @media (max-width: 767px) {
+      #best-deals-big .price-block {
+        padding: 0 60px; } }
+  @media (max-width: 767px) {
+    #best-deals-big .name-block {
+      padding: 0 60px; } }

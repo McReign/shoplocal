@@ -1,0 +1,69 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+
+#retailer-magazines
+	#retailer-header
+		.img-block
+			@media (max-width: $medium)
+				display: none
+	.back-link
+		margin: 0 -15px
+		margin-bottom: 24px
+		padding: 8px 0
+		text-align: center
+		border-bottom: solid 1px #d5d5d5
+		@media (max-width: $medium)
+			padding: 12px 0
+			background-color: rgba(121, 191, 255, 0.3)
+			border: none
+		a
+			display: inline-block
+			cursor: pointer
+			font-size: 14px
+			font-weight: 600
+			color: $blue
+			span
+				font-size: 16px
+				font-weight: normal
+				margin-right: 8px
+	.slider
+		margin: 0 -15px
+		img
+			width: 100%
+		.left-btn, .right-btn
+			position: absolute
+			top: 340px
+			padding: 85px 6px
+			border: none
+			outline: none
+			color: #ffffff
+			border-radius: 4px
+			cursor: pointer
+			background-color: $blue
+			span
+				display: block
+				transform: rotateY(60deg)
+				font-size: 50px
+		.left-btn
+			left: -51px
+		.right-btn
+			right: -51px
+		.left-btn:disabled, .right-btn:disabled
+			background-color: #eaeaea
+		.other-magazines
+			margin: 0 -15px
+			h3
+				margin-bottom: 20px
+				font-size: 18px
+				color: #666666
+
+.md-none
+	@media (max-width: $medium)
+		display: none

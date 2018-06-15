@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500")
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,600")
+
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+
+body
+	font-family: Poppins, sans-serif
+
+.main-products-right
+	@media (max-width: $large)
+		display: none
+
+.container-inner
+	width: 100%
+	padding: 0 85px 45px 85px
+	@media (max-width: $large + 1px)
+		padding: 0 15px
+	#deals-for
+		padding-top: 20px
+		text-align: center
+		.city
+			font-size: 14px
+			color: $grey
+			margin-bottom: 5px
+		.info
+			font-size: 12px
+			color: $blue
+	#main-products
+		margin-top: 42px
+		@media (min-width: $small)
+			margin-bottom: 42px
+	#expiring-soon-block
+		width: 100%
+		margin-bottom: 45px
+		#expiring-soon-banner
+			position: relative
+			width: 100%
+			padding: 25px 0
+			color: $white
+			background-color: #39ddb0
+			border-radius: 8px
+			box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3)
+			text-align: center
+			margin-bottom: 35px
+			.text-container
+				position: relative
+				z-index: 5
+				h1
+					font-family: Zilla Slab
+					text-transform: uppercase
+					font-size: 70px
+					font-weight: 600
+					margin-bottom: 10px
+					@media (max-width: $medium)
+						font-size: 34px
+				h3
+					font-size: 34px
+					margin-bottom: 10px
+					font-weight: normal
+					@media (max-width: $large)
+						font-size: 17px
+				p
+					a
+						font-size: 14px
+						color: $blue
+						cursor: pointer
+						@media (max-width: $large)
+							font-size: 14px
+						&:visited
+							color: $blue
+			img
+				position: absolute
+				bottom: 0
+				left: 100px
+				z-index: 1
+				@media (max-width: $xlarge)
+					display: none
+		#expiring-soon-products
+			.col-6
+				@media (max-width: $medium)
+					margin-bottom: 15px
+	#best-deals-block
+		width: 100%
+		margin-bottom: 100px
+		@media (max-width: $xlarge)
+			margin-bottom: 50px
+		#best-deals-header
+			text-align: left
+			@media (max-width: $large)
+					text-align: center
+			h1, h3
+				font-family: Zilla Slab
+			h3
+				font-size: 34px
+				font-weight: 400
+				color: #333333
+			h1
+				font-size: 70px
+				font-weight: 600
+				color: #df3497
+				margin-bottom: 25px
+				@media (max-width: $xlarge)
+					font-size: 55px
+				@media (max-width: $medium)
+					font-size: 50px
+		.row
+			&:first-child
+				margin-bottom: 50px
+				@media (max-width: $xlarge)
+					margin-bottom: 20px
+	#new-this-week-block
+		margin-bottom: 50px
+		#new-this-week-banner
+			position: relative
+			display: flex
+			width: 100%
+			height: 120px
+			align-items: center
+			justify-content: center
+			margin-bottom: 30px
+			background-image: url("../../assets/nt-w-banner.png")
+			background-size: 100% 100%
+			background-repeat: no-repeat
+			h1
+				color: $white
+				font-family: Zilla Slab
+				font-size: 55px
+				font-weight: 300
+				@media (max-width: $medium)
+					font-size: 40px
+			img
+				position: absolute
+				bottom: 0
+				left: 100px
+				@media (max-width: $xlarge)
+					display: none
+		.row
+			margin-bottom: 40px
+			&:last-child
+				margin-bottom: 0
+		.price-block-mini
+			margin-bottom: 6px
+	#weekly-shopping
+		margin-bottom: 50px
+		.row
+			&:first-child
+				margin-bottom: 35px
+	#all-btn
+		text-align: center
+
+.name-block
+	.product-name
+		font-size: 14px
+		color: $grey
+		line-height: 1.43
+	.shop-name
+		font-size: 14px
+		color: $grey
+		line-height: 1.43
+		span
+			color: $blue
+			font-weight: 500
+
+.stock-sticker-mini
+	position: absolute
+	top: 0
+	right: 0
+	background-color: $blue
+	width: 49px
+	height: 49px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	border-radius: 50%
+	font-size: 10px
+	font-weight: 500
+	text-align: center
+	@media (min-width: $medium)
+		display: none
+	span
+		line-height: 1
+		display: block
+		width: 100%
+		color: $white
+		text-transform: uppercase
+		&:first-child
+			font-size: 24px
+			line-height: 0.8
+
+.stock-sticker-big
+	position: absolute
+	top: 0
+	right: 0
+	width: 78px
+	height: 78px
+	padding-bottom: 10px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	background-color: $blue
+	border-radius: 50%
+	font-size: 14px
+	color: $white
+	text-transform: uppercase
+	font-weight: 600
+	.number
+		font-size: 34px
+	span
+		display: block
+		width: 100%
+
+.stock-block
+	display: block
+	div
+		position: relative
+		display: inline-block
+		color: $white
+		background-color: #79bfff
+		padding: 19px 10px
+		height: 96px
+		margin-bottom: 10px
+		@media (max-width: $xlarge)
+			padding: 19px 10px
+			height: 84px
+		&::before
+			content: ""
+			height: 0
+			width: 0
+			position: absolute
+			left: -30px
+			top: 0
+			border-top: 48px solid transparent
+			border-bottom: 48px solid transparent
+			border-right: 30px solid #79bfff
+			@media (max-width: $xlarge)
+				border-top: 42px solid transparent
+				border-bottom: 42px solid transparent
+		span
+			display: block
+			font-size: 23px
+			font-weight: 600
+			text-align: left
+			line-height: 1.26
+			@media (max-width: $xlarge)
+				font-size: 18px
+
+
+.img-sticker
+	display: inline-block
+	position: absolute
+	left: 0
+	top: 0
+	width: 140px
+	background-color: #79bfff
+	text-align: center
+	padding: 15px 25px
+	span
+		color: $white
+		text-transform: uppercase
+		font-size: 36px
+		font-weight: 600
+		display: block
+		line-height: 0.94
+
+.price-big
+	color: $blue
+	font-size: 60px
+	font-weight: 600
+	@media (max-width: $xlarge)
+		font-size: 40px
+	@media (max-width: $medium)
+		font-size: 30px
+
+.price-usual
+	color: $blue
+	font-size: 36px
+	font-weight: 600
+	@media (max-width: $xlarge)
+		font-size: 28px
+
+.hide-mobile
+	@media (max-width: $medium)
+		display: none
+
+.container
+	padding: 0
+	@media (min-width: $xlarge)
+		max-width: 1200px
+
+.mgb-0
+	margin-bottom: 0 !important
+
+
+
+

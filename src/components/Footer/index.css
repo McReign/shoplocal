@@ -1,0 +1,27 @@
+#footer {
+  width: 100%;
+  overflow: hidden; }
+  #footer #footer-img {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 102px;
+    background-image: url("../../assets/background-buildings.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: 0 9px; }
+  #footer #footer-block {
+    width: 100%;
+    padding: 41px 0;
+    text-align: center;
+    background-color: #333;
+    border: solid 1px #979797;
+    z-index: 5; }
+    #footer #footer-block span {
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 1.17;
+      color: #ffffff; }
+      @media (max-width: 576px) {
+        #footer #footer-block span {
+          display: block; } }

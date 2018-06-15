@@ -1,0 +1,71 @@
+.overlay {
+  background: #000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  opacity: .3; }
+
+.product-modal-visible {
+  background: #fff;
+  position: fixed !important;
+  left: 50%;
+  top: 155px !important;
+  z-index: 2000;
+  width: 539px;
+  padding: 0px;
+  padding-bottom: 25px;
+  margin-left: -270px; }
+  @media (max-width: 576px) {
+    .product-modal-visible {
+      width: 100%;
+      left: 0;
+      margin-left: 0; } }
+
+.product-modal-visible .close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 13px;
+  height: 13px;
+  cursor: pointer; }
+
+#win .title {
+  margin-left: 32px;
+  margin-top: 16px;
+  font-family: Poppins;
+  font-size: 18px;
+  text-align: left;
+  color: #666666; }
+
+.content {
+  margin: 14px 32px; }
+
+.store-title {
+  margin-top: 26px;
+  font-family: Poppins !important;
+  font-size: 16px !important;
+  color: #666666 !important;
+  height: 23px; }
+
+.store-address-modal {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #9b9b9b !important; }
+
+.store-hours-modal {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #9b9b9b !important;
+  text-align: right; }
+
+.store-phone-modal {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #9b9b9b !important;
+  margin-top: 4px; }

@@ -1,0 +1,58 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+
+.stock-sticker
+	position: absolute
+	top: 0
+	right: 0
+	width: 58px
+	height: 58px
+	padding-top: 5px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	background-color: $blue
+	border-radius: 50%
+	font-size: 14px
+	color: $white
+	text-transform: uppercase
+	font-weight: 600
+	@media (max-width: $medium)
+		width: 49px
+		height: 49px
+		font-weight: 500
+		padding-top: 0
+	.default
+		display: block
+		text-align: center
+		span
+			font-size: 14px
+			text-align: center
+			line-height: 1.2
+			display: block
+			width: 100%
+		@media (max-width: $medium)
+			display: none
+	.mini
+		display: none
+		text-align: center
+		span
+			font-size: 10px
+			line-height: 1
+			display: block
+			width: 100%
+			color: $white
+			text-transform: uppercase
+			&:first-child
+				font-size: 24px
+				line-height: 0.8
+		@media (max-width: $medium)
+			display: block

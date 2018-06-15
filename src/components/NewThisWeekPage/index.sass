@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500")
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,600")
+
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+$aqua-marine: #39ddb0
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+
+#new-this-week-page
+  #new-this-week-banner
+    width: 389px
+    height: 375px
+    padding: 116px 50px
+    margin-bottom: 0
+    text-align: center
+    background-image: url("../../assets/nt-w-banner.png")
+    color: #fff
+    border-radius: 8px
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3)
+    @media (max-width: $xlarge)
+      padding: 94px 40px
+      width: 311px
+      height: 300px
+    @media (max-width: $large + 0.5px)
+      display: none
+    h2
+      font-family: Zilla Slab
+      font-size: 60px
+      font-weight: 600
+      text-transform: uppercase
+      @media (max-width: $xlarge)
+        font-size: 45px
+    h1
+      font-family: Zilla Slab
+      font-size: 93px
+      line-height: 0.81
+      text-transform: uppercase
+      margin-bottom: 14px
+      @media (max-width: $xlarge)
+        font-size: 70px
+    h3
+      font-size: 29px
+      font-weight: normal
+      line-height: 1.1
+      @media (max-width: $xlarge)
+        font-size: 20px
+  #new-this-week-main
+    margin-bottom: 68px
+  .product-template
+    margin-bottom: 30px
+
+
+
+

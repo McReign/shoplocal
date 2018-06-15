@@ -1,0 +1,95 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 768px
+$small: 576px
+	
+#retailer-header
+	margin: 0
+	@media (max-width: $medium)
+		margin: 0 -15px
+	.img-block
+		border: solid 1px #d5d5d5
+		padding: 18px
+		@media (max-width: $xlarge)
+			border: none
+		.retailer-header-text
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			img
+				margin-right: 42px
+			h2
+				font-size: 24px
+				color: #333333
+				@media (max-width: $xlarge)
+					display: none
+		.retailer-header-bg
+			img
+				position: absolute
+				bottom: -19px
+				right: 0
+				@media (max-width: $xlarge)
+					width: 234px
+					height: 95px
+					bottom: -18px
+	.info-block
+		padding: 15px
+		background-color: #ee7125
+		background-image: url('../../assets/distress.png')
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		.nearest-store
+			display: flex
+			align-items: center
+			justify-content: space-around
+			color: #ffffff
+			h3
+				font-family: Zilla Slab
+				font-size: 18px
+				font-weight: 600
+				@media (max-width: $xlarge)
+					display: none
+			p
+				display: none
+				font-size: 14px
+				@media (max-width: $xlarge)
+					display: block
+		.address
+			@extend .nearest-store
+			img
+				width: 90px
+				height: 54px
+			p
+				display: block
+				font-size: 14px
+				font-weight: normal
+				&:first-child
+					margin-bottom: 10px
+		.open-today
+			@extend .address
+			padding-left: 0
+			p
+				width: 102px
+				display: block
+				text-align: center
+		.phone
+			@extend .address
+		.information
+			@extend .nearest-store
+			p
+				display: block
+				font-size: 14px
+				text-decoration: underline
+				cursor: pointer
+
+.hg100
+	height: 100%
+
+.xl-none
+	@media (max-width: $xlarge)
+		display: none !important

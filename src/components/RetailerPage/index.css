@@ -1,0 +1,32 @@
+#retailer-page #weekly-savings {
+  padding: 40px 0;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa; }
+  @media (max-width: 768px) {
+    #retailer-page #weekly-savings {
+      padding: 25px 0; } }
+  #retailer-page #weekly-savings div {
+    display: inline-block;
+    text-align-last: left; }
+    #retailer-page #weekly-savings div h3 {
+      font-size: 32px;
+      font-weight: 200;
+      color: #333333; }
+    #retailer-page #weekly-savings div h1 {
+      font-size: 87px;
+      font-family: Zilla Slab;
+      font-weight: bold;
+      color: #333333; }
+      @media (max-width: 768px) {
+        #retailer-page #weekly-savings div h1 {
+          font-size: 44px; } }
+
+.product-template {
+  margin-bottom: 30px; }
+
+@media (max-width: 991px) {
+  .lg-none {
+    display: none; } }

@@ -1,0 +1,51 @@
+$white: #ffffff
+$blue: #16459a
+$grey: #9b9b9b
+$light-grey: #ccc
+
+$xlarge: 1199px
+$large: 991px
+$medium: 767px
+$small: 576px
+
+.product-template
+  cursor: pointer
+  .img-block
+    position: relative
+    display: flex
+    align-items: center
+    width: 232px
+    max-width: 100%
+    text-align: center
+    margin: 0 auto 20px auto
+    @media (max-width: $xlarge)
+      height: 175px
+      width: 175px
+    img
+      width: 100%
+      max-height: 232px
+      @media (max-width: $xlarge)
+        max-height: 175px
+  .price-block
+    position: relative
+    display: block
+    text-align: left
+    margin-bottom: 15px
+    span
+      display: block
+      font-size: 30px
+      font-weight: 600
+      color: $blue
+    .save
+      padding-top: 5px
+      font-size: 16px
+      color: $grey
+      font-weight: 600
+  .price-block-mini
+    display: block
+    text-align: left
+    margin-bottom: 25px
+    span
+      font-size: 20px
+      font-weight: 600
+      color: $blue

@@ -1,0 +1,60 @@
+@media (max-width: 767px) {
+  #retailer-magazines #retailer-header .img-block {
+    display: none; } }
+
+#retailer-magazines .back-link {
+  margin: 0 -15px;
+  margin-bottom: 24px;
+  padding: 8px 0;
+  text-align: center;
+  border-bottom: solid 1px #d5d5d5; }
+  @media (max-width: 767px) {
+    #retailer-magazines .back-link {
+      padding: 12px 0;
+      background-color: rgba(121, 191, 255, 0.3);
+      border: none; } }
+  #retailer-magazines .back-link a {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #16459a; }
+    #retailer-magazines .back-link a span {
+      font-size: 16px;
+      font-weight: normal;
+      margin-right: 8px; }
+
+#retailer-magazines .slider {
+  margin: 0 -15px; }
+  #retailer-magazines .slider img {
+    width: 100%; }
+  #retailer-magazines .slider .left-btn, #retailer-magazines .slider .right-btn {
+    position: absolute;
+    top: 340px;
+    padding: 85px 6px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #16459a; }
+    #retailer-magazines .slider .left-btn span, #retailer-magazines .slider .right-btn span {
+      display: block;
+      transform: rotateY(60deg);
+      font-size: 50px; }
+  #retailer-magazines .slider .left-btn {
+    left: -51px; }
+  #retailer-magazines .slider .right-btn {
+    right: -51px; }
+  #retailer-magazines .slider .left-btn:disabled, #retailer-magazines .slider .right-btn:disabled {
+    background-color: #eaeaea; }
+  #retailer-magazines .slider .other-magazines {
+    margin: 0 -15px; }
+    #retailer-magazines .slider .other-magazines h3 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #666666; }
+
+@media (max-width: 767px) {
+  .md-none {
+    display: none; } }
